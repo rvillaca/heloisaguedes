@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, MapPin, MessageCircle } from "lucide-react";
+import { Instagram, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -18,7 +18,6 @@ export function Footer() {
         </div>
         <div>
           <h3>Contato</h3>
-          <a href="https://wa.me/5544998565990" target="_blank" rel="noreferrer"><MessageCircle size={17}/> (44) 9 9856-5990</a>
           <a href="https://www.instagram.com/draheloisaguedes" target="_blank" rel="noreferrer"><Instagram size={17}/> @draheloisaguedes</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Rua+Marechal+Deodoro+da+Fonseca+261+Sao+Jose+dos+Pinhais" target="_blank" rel="noreferrer"><MapPin size={17}/> Metropolimed · São José dos Pinhais</a>
         </div>
