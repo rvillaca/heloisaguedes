@@ -16,7 +16,7 @@ export function ContactForm() {
     <form className="contactForm" onSubmit={submit}>
       <label>Seu nome<input value={name} onChange={(e) => setName(e.target.value)} placeholder="Como podemos te chamar?" /></label>
       <label>Motivo do contato<textarea value={reason} onChange={(e) => setReason(e.target.value)} placeholder="Conte brevemente como podemos ajudar" rows={4}/></label>
-      <button className="button" type="submit">Continuar no WhatsApp</button>
+      <button className="button" type="submit">Agendar teleconsulta pelo WhatsApp</button>
       <small>Nenhum dado é armazenado neste site. A mensagem será aberta diretamente no WhatsApp.</small>
     </form>
   );

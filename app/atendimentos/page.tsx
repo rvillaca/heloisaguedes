@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 const services = [
   ["Consulta médica geral", "Avaliação de sintomas, histórico, exame físico, hipóteses diagnósticas e plano de investigação ou tratamento.", "ADULTOS E IDOSOS"],
   ["Bem-estar e saúde do idoso", "Acompanhamento global, funcionalidade, risco de quedas, nutrição, cognição, sono e revisão de medicações.", "CUIDADO INTEGRAL"],
-  ["Dor crônica", "Avaliação clínica da dor persistente, impacto funcional, fatores associados, tratamentos prévios e necessidade de abordagem multiprofissional.", "ACOMPANHAMENTO CLÍNICO"],
   ["Saúde mental integrada", "Acolhimento de sintomas emocionais e acompanhamento clínico geral de pacientes em tratamento psiquiátrico, inclusive monitorização metabólica quando pertinente.", "COORDENAÇÃO DE CUIDADO"],
   ["Hipertensão arterial", "Acompanhamento de pressão arterial, adesão, fatores de risco, exames e prevenção de complicações cardiovasculares.", "DOENÇAS CRÔNICAS"],
   ["Diabetes e pré-diabetes", "Avaliação de controle glicêmico, fatores de risco, exames de rotina e estratégias de cuidado longitudinal.", "SAÚDE METABÓLICA"],
@@ -29,7 +28,6 @@ export default function AtendimentosPage() {
     <>
       <section className="pageHero"><div className="container pageHeroGrid"><div><span className="eyebrow">ATENDIMENTOS</span><h1>Cuidado clínico para diferentes momentos.</h1><p>O atendimento generalista pode ser a porta de entrada para sintomas novos, prevenção, controle de doenças crônicas e organização de tratamentos já em andamento.</p></div><p className="notice">As informações abaixo descrevem tipos de demandas que podem ser avaliadas em consulta. O diagnóstico e a conduta dependem da avaliação individual de cada paciente.</p></div></section>
       <section className="section softSection"><div className="container"><div className="serviceList">{services.map(([title,text,tag])=><article className="serviceItem" key={title}><h3>{title}</h3><p>{text}</p><small>{tag}</small></article>)}</div></div></section>
-      <section className="section"><div className="container contentGrid"><div className="stickyLabel"><span className="eyebrow">PRIMEIRA CONSULTA</span><h2>O que levar?</h2></div><div className="richText"><p>Se possível, leve uma lista dos medicamentos e suplementos em uso, exames recentes, relatórios de outros profissionais e informações sobre alergias ou reações medicamentosas anteriores.</p><p>Também vale anotar sintomas, há quanto tempo começaram e quais situações pioram ou melhoram. Essas informações ajudam a tornar a consulta mais objetiva e segura.</p><div className="infoPanel"><h3>Importante</h3><p>Em situações de urgência — como dor torácica intensa, falta de ar importante, perda súbita de força, alteração importante de consciência ou outros sinais graves — procure imediatamente um serviço de emergência.</p></div></div></div></section>
     </>
   );
 }
