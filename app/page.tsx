@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 
 const care = [
-  { icon: ShieldCheck, title: "Consulta de rotina", text: "Avaliação de fatores de risco, revisão do histórico de saúde e solicitação criteriosa de exames conforme idade, sintomas e contexto clínico." },
+  { icon: ShieldCheck, title: "Consulta de rotina e check-up", text: "Avaliação de fatores de risco, revisão do histórico de saúde e solicitação criteriosa de exames conforme idade, sintomas e contexto clínico." },
   { icon: Stethoscope, title: "Queixas agudas em geral", text: "Avaliação de sintomas respiratórios, gastrointestinais, urinários, cefaleias, dores comuns, alterações metabólicas e outras demandas da prática generalista." },
   { icon: UsersRound, title: "Bem-estar do idoso", text: "Acompanhamento global de saúde, funcionalidade, prevenção de quedas, revisão de medicações e atenção às necessidades que surgem com o envelhecimento." },
   { icon: Brain, title: "Saúde mental integrada", text: "Acolhimento de queixas emocionais e acompanhamento da saúde clínica de pacientes em tratamento psiquiátrico, com encaminhamento especializado quando indicado." },
@@ -16,6 +16,10 @@ export default function HomePage() {
     <>
       <section className="hero sectionOverflow">
         <div className="heroGlow heroGlowOne"/><div className="heroGlow heroGlowTwo"/>
+        <div className="container mobileHeroActions">
+          <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar presencial</a>
+          <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar online</a>
+        </div>
         <div className="container heroGrid">
           <div className="heroCopy">
             <span className="eyebrow">ATENDIMENTO MÉDICO GENERALISTA</span>
