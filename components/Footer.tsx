@@ -15,7 +15,6 @@ export function Footer() {
           <Link href="/sobre">Sobre</Link>
           <Link href="/atendimentos">Atendimentos</Link>
           <Link href="/teleconsulta">Teleconsulta</Link>
-          <Link href="/contato">Contato</Link>
         </div>
         <div>
           <h3>Contato</h3>

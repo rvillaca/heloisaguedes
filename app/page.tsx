@@ -1,14 +1,13 @@
 import Link from "next/link";
-import { Activity, ArrowRight, Brain, CheckCircle2, HeartPulse, Instagram, MapPin, MessageCircle, MonitorSmartphone, ShieldCheck, Stethoscope, UsersRound } from "lucide-react";
+import { ArrowRight, Brain, CheckCircle2, HeartPulse, Instagram, MapPin, MessageCircle, MonitorSmartphone, ShieldCheck, Stethoscope, UsersRound } from "lucide-react";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 
 const care = [
+  { icon: ShieldCheck, title: "Consulta de rotina", text: "Avaliação de fatores de risco, revisão do histórico de saúde e solicitação criteriosa de exames conforme idade, sintomas e contexto clínico." },
+  { icon: Stethoscope, title: "Queixas agudas em geral", text: "Avaliação de sintomas respiratórios, gastrointestinais, urinários, cefaleias, dores comuns, alterações metabólicas e outras demandas da prática generalista." },
   { icon: UsersRound, title: "Bem-estar do idoso", text: "Acompanhamento global de saúde, funcionalidade, prevenção de quedas, revisão de medicações e atenção às necessidades que surgem com o envelhecimento." },
-  { icon: Activity, title: "Dor crônica", text: "Avaliação clínica da dor persistente, investigação de fatores associados, revisão de tratamentos em uso e coordenação com outras áreas quando necessário." },
   { icon: Brain, title: "Saúde mental integrada", text: "Acolhimento de queixas emocionais e acompanhamento da saúde clínica de pacientes em tratamento psiquiátrico, com encaminhamento especializado quando indicado." },
-  { icon: HeartPulse, title: "Hipertensão e diabetes", text: "Acompanhamento de doenças crônicas, metas terapêuticas, exames de controle, prevenção de complicações e orientação de hábitos de vida." },
-  { icon: ShieldCheck, title: "Prevenção e check-up", text: "Avaliação de fatores de risco, revisão do histórico de saúde e solicitação criteriosa de exames conforme idade, sintomas e contexto clínico." },
-  { icon: Stethoscope, title: "Queixas clínicas em geral", text: "Avaliação de sintomas respiratórios, gastrointestinais, urinários, cefaleias, dores comuns, alterações metabólicas e outras demandas da prática generalista." },
+  { icon: HeartPulse, title: "Hipertensão, colesterol e diabetes", text: "Acompanhamento de doenças crônicas, metas terapêuticas, exames de controle, prevenção de complicações e orientação de hábitos de vida." },
 ];
 
 export default function HomePage() {
@@ -18,28 +17,20 @@ export default function HomePage() {
         <div className="heroGlow heroGlowOne"/><div className="heroGlow heroGlowTwo"/>
         <div className="container heroGrid">
           <div className="heroCopy">
-            <span className="eyebrow">ATENDIMENTO MÉDICO GENERALISTA · SÃO JOSÉ DOS PINHAIS</span>
-            <h1>Saúde cuidada com <em>escuta, proximidade</em> e visão integral.</h1>
+            <span className="eyebrow">ATENDIMENTO MÉDICO GENERALISTA</span>
+            <h1>Saúde com <em>escuta, proximidade</em> e visão integral.</h1>
             <p className="heroLead">Dra. Heloísa Geovana Guedes acompanha adultos e idosos em diferentes momentos da vida, unindo prevenção, investigação clínica e cuidado contínuo.</p>
             <div className="doctorId"><strong>Dra. Heloísa Geovana Guedes</strong><span>MÉDICA · CRM-PR 65271</span></div>
             <div className="heroActions">
-              <a className="button" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><MessageCircle size={18}/> Agendar pelo WhatsApp</a>
-              <a className="button buttonGhost" href="https://medprev.online/profissionais/heloisa-geovana-guedes-9a89c7d04d6a29639893b5265aeaea40/" target="_blank" rel="noreferrer">Ver horários <ArrowRight size={17}/></a>
+              <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><MessageCircle size={18}/> Agendar presencial</a>
+              <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><MonitorSmartphone size={18}/> Agendar online</a>
             </div>
-            <div className="heroMeta"><span><MapPin size={16}/> Presencial em São José dos Pinhais</span><span><MonitorSmartphone size={16}/> Teleconsulta</span></div>
+            <div className="heroMeta"><span><MapPin size={16}/> Atendimento presencial</span><span><MonitorSmartphone size={16}/> Teleconsulta</span></div>
           </div>
           <div className="heroVisual">
             <PhotoPlaceholder variant="hero" src="/images/foto-principal.jpeg" alt="Dra. Heloísa Geovana Guedes" priority />
             <div className="floatingCard"><span className="floatingIcon">✦</span><div><strong>Cuidado que conecta os pontos</strong><small>Sintomas, histórico, rotina e objetivos de saúde.</small></div></div>
           </div>
-        </div>
-      </section>
-
-      <section className="trustStrip">
-        <div className="container trustGrid">
-          <div><strong>Particular e Medprev</strong><span>Opções de atendimento</span></div>
-          <div><strong>Presencial + online</strong><span>Mais flexibilidade para cuidar da saúde</span></div>
-          <div><strong>Metropolimed</strong><span>Centro · São José dos Pinhais</span></div>
         </div>
       </section>
 
@@ -62,8 +53,8 @@ export default function HomePage() {
           <div className="aboutCopy">
             <span className="eyebrow">SOBRE A DRA. HELOÍSA</span>
             <h2>Ciência no raciocínio. Humanidade na consulta.</h2>
-            <p>Heloísa Geovana Guedes é médica formada pela Faculdade Pequeno Príncipe e atua em São José dos Pinhais. Além do atendimento ambulatorial na Metropolimed, integra a assistência da UPA Afonso Pena.</p>
-            <p>Sua prática valoriza uma anamnese detalhada, compreensão do contexto de cada paciente, prevenção e acompanhamento longitudinal — especialmente em situações em que diferentes problemas de saúde se sobrepõem.</p>
+            <p>Heloísa Geovana Guedes é médica formada pela Faculdade Pequeno Príncipe.</p>
+            <p>Sua prática valoriza uma consulta detalhada, compreensão do contexto de cada paciente, prevenção e acompanhamento longitudinal, especialmente em situações em que diferentes problemas de saúde se sobrepõem.</p>
             <div className="checkList"><span><CheckCircle2/> Atendimento individualizado</span><span><CheckCircle2/> Decisões compartilhadas</span><span><CheckCircle2/> Encaminhamento quando necessário</span></div>
             <Link className="button buttonGhost" href="/sobre">Conheça a trajetória</Link>
           </div>
@@ -91,7 +82,7 @@ export default function HomePage() {
       <section className="section darkSection">
         <div className="container ctaGrid">
           <div><span className="eyebrow lightEyebrow">AGENDAMENTO</span><h2>Seu cuidado pode começar por uma boa conversa.</h2><p>Escolha a forma mais conveniente para verificar disponibilidade e marcar sua consulta.</p></div>
-          <div className="ctaActions"><a className="button buttonLight" href="https://wa.me/5544998565990" target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp</a><a className="button buttonOutlineLight" href="https://medprev.online/profissionais/heloisa-geovana-guedes-9a89c7d04d6a29639893b5265aeaea40/" target="_blank" rel="noreferrer">Medprev</a><a className="button buttonOutlineLight" href="https://www.instagram.com/draheloisaguedes" target="_blank" rel="noreferrer"><Instagram/> Instagram</a></div>
+          <div className="ctaActions"><a className="button buttonLight" href="https://wa.me/5544998565990" target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp teleconsulta</a><a className="button buttonOutlineLight" href="https://wa.me/5541992277285" target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp presencial</a><a className="button buttonOutlineLight" href="https://www.instagram.com/draheloisaguedes" target="_blank" rel="noreferrer"><Instagram/> Instagram</a></div>
         </div>
       </section>
     </>
