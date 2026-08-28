@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Brain, CheckCircle2, HeartPulse, Instagram, MapPin, MessageCircle, MonitorSmartphone, ShieldCheck, Stethoscope, UsersRound } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 
 const care = [
@@ -22,8 +23,8 @@ export default function HomePage() {
             <p className="heroLead">Dra. Heloísa Geovana Guedes acompanha adultos e idosos em diferentes momentos da vida, unindo prevenção, investigação clínica e cuidado contínuo.</p>
             <div className="doctorId"><strong>Dra. Heloísa Geovana Guedes</strong><span>MÉDICA · CRM-PR 65271</span></div>
             <div className="heroActions">
-              <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><MessageCircle size={18}/> Agendar presencial</a>
-              <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><MonitorSmartphone size={18}/> Agendar online</a>
+              <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp size={19}/> Agendar presencial</a>
+              <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp size={19}/> Agendar online</a>
             </div>
             <div className="heroMeta"><span><MapPin size={16}/> Atendimento presencial</span><span><MonitorSmartphone size={16}/> Teleconsulta</span></div>
           </div>
