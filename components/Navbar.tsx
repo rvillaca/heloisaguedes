@@ -34,8 +34,8 @@ export function Navbar() {
         </nav>
 
         <div className="desktopCtas">
-          <a className="button buttonSmall" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={17}/> Agendar presencial</a>
-          <a className="button buttonSmall buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={17}/> Agendar online</a>
+          <a className="button buttonSmall" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={17}/> Agendar consulta presencial</a>
+          <a className="button buttonSmall buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20teleconsulta%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={17}/> Agendar teleconsulta</a>
         </div>
 
         <button className="menuButton" onClick={() => setOpen(!open)} aria-label={open ? "Fechar menu" : "Abrir menu"} aria-expanded={open}>
@@ -48,8 +48,8 @@ export function Navbar() {
           {links.map(([href, label]) => (
             <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
           ))}
-          <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar presencial</a>
-          <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20online%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar online</a>
+          <a className="button" href="https://wa.me/5541992277285?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar consulta presencial</a>
+          <a className="button buttonGhost" href="https://wa.me/5544998565990?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20teleconsulta%20com%20a%20Dra.%20Helo%C3%ADsa." target="_blank" rel="noreferrer"><FaWhatsapp className="whatsappIcon" size={19}/> Agendar teleconsulta</a>
         </div>
       )}
     </header>
